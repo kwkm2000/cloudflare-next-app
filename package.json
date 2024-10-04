@@ -10,9 +10,12 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
+    "pages:dev": "wrangler pages dev"
+
   },
   "dependencies": {
+    "hono": "^4.6.3",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
